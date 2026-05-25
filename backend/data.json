@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "_id": "mpjn8u7o3xxnf53su",
+      "name": "ram",
+      "email": "kit27.cse60@gmail.com",
+      "password": "$2b$10$0yk52SVjI5ITQ4AAKW9W0uZdK1cQD3VENfB2lpT0eOU1LB6Uk/Z0u",
+      "createdAt": "2026-05-24T10:37:49.428Z",
+      "updatedAt": "2026-05-25T03:34:39.116Z"
+    }
+  ],
+  "tasks": [],
+  "settings": [
+    {
+      "_id": "mpjn999sjralj7rba",
+      "reminders": true,
+      "notifications": true,
+      "studyGoal": "4 Hours",
+      "language": "Spanish",
+      "user": "mpjn8u7o3xxnf53su",
+      "createdAt": "2026-05-24T10:38:08.943Z",
+      "updatedAt": "2026-05-24T11:13:31.701Z"
+    }
+  ]
+}
