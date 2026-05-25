@@ -11,12 +11,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/settings', settingsRoutes);
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('StudyMaster Backend Running Successfully 🚀');
+});
+
 // Health check
-app.get('/api/health', (req, res) => res.json({ status: 'ok', storage: 'json-file' }));
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', storage: 'json-file' });
+});
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT} (JSON file storage)`));
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} (JSON file storage)`);
+});
